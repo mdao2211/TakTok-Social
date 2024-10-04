@@ -23,12 +23,11 @@ const Header = ({ isShow }) => {
         <motion.div
           initial={{ opacity: 0 }}
           whileInView={{ opacity: 1 }}
-          viewport={{ once: true }}
-        >
+          viewport={{ once: true }}>
           <img
-            className="logo"
+            className="w-4 h-4 logo cursor-pointer"
             onClick={() => router.push("/")}
-            src="https://i.postimg.cc/W1PwRj4j/logo.png"
+            src="./TaktokLogo.png"
             alt="Tiktok"
           />
         </motion.div>
@@ -37,8 +36,7 @@ const Header = ({ isShow }) => {
           initial={{ opacity: 0 }}
           whileInView={{ opacity: 1 }}
           viewport={{ once: true }}
-          className="search-bar"
-        >
+          className="search-bar">
           <input
             type="text"
             className="search-input"
@@ -51,8 +49,7 @@ const Header = ({ isShow }) => {
               viewBox="0 0 24 24"
               strokeWidth={1.5}
               stroke="currentColor"
-              className="w-6 h-6 ml-2"
-            >
+              className="w-6 h-6 ml-2">
               <path
                 strokeLinecap="round"
                 strokeLinejoin="round"
@@ -66,24 +63,21 @@ const Header = ({ isShow }) => {
           initial={{ opacity: 0 }}
           whileInView={{ opacity: 1 }}
           viewport={{ once: true }}
-          className="nav-right"
-        >
+          className="nav-right">
           {isShow && (
             <>
               {user && (
                 <button
                   onClick={() => router.push("/pin/create")}
                   type="button"
-                  className="flex items center text-white bg-gradient-to-r from-cyan-500 to-blue-500 hover:bg-gradient-to-bl focus:ring-4 focus:outline-none focus:ring-cyan-300 dark:focus:ring-cyan-800 font-medium rounded-lg text-sm px-4 py-2 text-center mr-2 shadow-lg"
-                >
+                  className="flex items center text-white bg-gradient-to-r from-cyan-500 to-blue-500 hover:bg-gradient-to-bl focus:ring-4 focus:outline-none focus:ring-cyan-300 dark:focus:ring-cyan-800 font-medium rounded-lg text-sm px-4 py-2 text-center mr-2 shadow-lg">
                   <svg
                     xmlns="http://www.w3.org/2000/svg"
                     fill="none"
                     viewBox="0 0 24 24"
                     strokeWidth={1.5}
                     stroke="currentColor"
-                    className="w-5 h-5"
-                  >
+                    className="w-5 h-5">
                     <path
                       strokeLinecap="round"
                       strokeLinejoin="round"
@@ -127,8 +121,7 @@ const Header = ({ isShow }) => {
           ) : (
             <button
               className="login-btn"
-              onClick={() => router.push("/auth/signin")}
-            >
+              onClick={() => router.push("/auth/signin")}>
               Log in
             </button>
           )}
@@ -141,8 +134,7 @@ const Header = ({ isShow }) => {
                 strokeWidth={1.5}
                 stroke="currentColor"
                 className="w-6 h-6"
-                onClick={() => setDropMenu(false)}
-              >
+                onClick={() => setDropMenu(false)}>
                 <path
                   strokeLinecap="round"
                   strokeLinejoin="round"
@@ -157,8 +149,7 @@ const Header = ({ isShow }) => {
                 strokeWidth={1.5}
                 stroke="currentColor"
                 className="w-6 h-6"
-                onClick={() => setDropMenu(true)}
-              >
+                onClick={() => setDropMenu(true)}>
                 <path
                   strokeLinecap="round"
                   strokeLinejoin="round"
@@ -171,8 +162,7 @@ const Header = ({ isShow }) => {
                 initial={{ opacity: 0 }}
                 whileInView={{ opacity: 1 }}
                 viewport={{ once: true }}
-                className="menu z-[999]"
-              >
+                className="menu z-[999]">
                 <ul>
                   <li>
                     <div className="flex items-center px-3 gap-4">
@@ -182,8 +172,7 @@ const Header = ({ isShow }) => {
                         viewBox="0 0 24 24"
                         strokeWidth={1.5}
                         stroke="currentColor"
-                        className="w-6 h-6"
-                      >
+                        className="w-6 h-6">
                         <path
                           strokeLinecap="round"
                           strokeLinejoin="round"
@@ -201,8 +190,7 @@ const Header = ({ isShow }) => {
                         viewBox="0 0 24 24"
                         strokeWidth={1.5}
                         stroke="currentColor"
-                        className="w-6 h-6"
-                      >
+                        className="w-6 h-6">
                         <path
                           strokeLinecap="round"
                           strokeLinejoin="round"
@@ -222,16 +210,14 @@ const Header = ({ isShow }) => {
                     <li>
                       <div
                         className="flex items-center px-3 gap-4"
-                        onClick={logout}
-                      >
+                        onClick={logout}>
                         <svg
                           xmlns="http://www.w3.org/2000/svg"
                           fill="none"
                           viewBox="0 0 24 24"
                           strokeWidth={1.5}
                           stroke="currentColor"
-                          className="w-6 h-6"
-                        >
+                          className="w-6 h-6">
                           <path
                             strokeLinecap="round"
                             strokeLinejoin="round"
@@ -245,16 +231,14 @@ const Header = ({ isShow }) => {
                     <li>
                       <div
                         className="flex items-center px-3 gap-4"
-                        onClick={() => router.push("/auth/signin")}
-                      >
+                        onClick={() => router.push("/auth/signin")}>
                         <svg
                           xmlns="http://www.w3.org/2000/svg"
                           fill="none"
                           viewBox="0 0 24 24"
                           strokeWidth={1.5}
                           stroke="currentColor"
-                          className="w-6 h-6"
-                        >
+                          className="w-6 h-6">
                           <path
                             strokeLinecap="round"
                             strokeLinejoin="round"

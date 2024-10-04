@@ -34,11 +34,7 @@ const Signin = () => {
         />
       </Head>
       <div className="flex flex-col items-center justify-center">
-        <img
-          className="w-96"
-          src="https://upload.wikimedia.org/wikipedia/en/thumb/a/a9/TikTok_logo.svg/1200px-TikTok_logo.svg.png"
-          alt=""
-        />
+        <img className="w-40" src="/TaktokLogo.png" alt="" />
         <div className="bg-white shadow lg:w-1/3  md:w-1/2 w-full p-10 mt-16 text-center rounded-md">
           <p
             tabIndex={0}
